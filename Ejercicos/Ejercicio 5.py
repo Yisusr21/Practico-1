@@ -11,8 +11,8 @@ class UniversidadCarrera:
 
 class UniversidadEstudiante(Universidad, UniversidadCarrera):
     def __init__(self, nombre, apellido, edad, nameuniversidad, especialidad):
-        Universidad.__init__(self,nameuniversidad)
-        UniversidadCarrera.__init__(self,especialidad)
+        Universidad.__init__(nameuniversidad)
+        UniversidadCarrera.__init__(especialidad)
         self.nameuniversidad = nameuniversidad
         self.especialidad = especialidad
         self.nombre = nombre
